@@ -7,4 +7,33 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
+<body>
+  <main>
+    <header>
+      <h1>Lista de Tarefas</h1>
+    </header>
+    <section>
+      <div>
+        <input type="text" id="taskInput" placeholder="Digite uma nova tarefa">
+        <label for="prioritySelect"">Prioridade:</label>
+        <select id="prioritySelect">
+            <option value="low">Baixa</option>
+            <option value="medium">Média</option>
+            <option value="high">Alta</option>
+        </select>
+        <button id="addTask">Adicionar</button>
+      </div>
+      <div>
+        <select id="filterSelect">
+          <option value="all">Todas</option>
+          <option value="active">Ativas</option>
+          <option value="completed">Concluídas</option>
+        </select>
+      </div>
+    </section>
+    <section>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+</body>
 </html>
