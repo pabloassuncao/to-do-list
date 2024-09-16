@@ -72,10 +72,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const filteredTasks = filterTasks();
     filteredTasks.forEach(task => {
       const li = document.createElement('li');
+      li.className = task.priority + (task.completed ? ' completed' : '');
       li.innerHTML = `
         <span>${task.text}</span>
-        <button onclick="toggleComplete(${task.id})"">${task.completed ? '↺' : '✓'}</button>
-        <button onclick="deleteTask(${task.id})">✕</button>
+        <button onclick="toggleComplete(${task.id})" class="${task.completed ? 'undo' : 'complete'}">${task.completed ? '↺' : '✓'}</button>
+        <button onclick="deleteTask(${task.id})" class="delete">✕</button>
       `;
       taskList.appendChild(li);
     });
