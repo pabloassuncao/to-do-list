@@ -20,12 +20,12 @@ Este projeto é uma aplicação web de lista de tarefas (to-do list), desenvolvi
 
 1. Clone este repositório para sua máquina local:
    ```
-   git clone https://github.com/seu-usuario/lista-de-tarefas-minimalista.git
+   git clone git@github.com:pabloassuncao/to-do-list.git
    ```
 
 2. Navegue até o diretório do projeto:
    ```
-   cd lista-de-tarefas-minimalista
+   cd to-do-list
    ```
 
 3. Abra o arquivo `index.html` em seu navegador web preferido.
