@@ -96,6 +96,11 @@ li button {
   margin-left: 10px;
 }
 
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .container {
   max-width: 600px;
   margin: 20px auto;
